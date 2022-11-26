@@ -1,0 +1,135 @@
+{{ define "main" }}
+<div class='main-container'>
+    <div class='title'>
+        <h1>elpengu's home</h1>
+        <hr style="margin-top: 10px;"/>
+    </div>
+    <div class="i-main">
+        <div class='left'>
+            <h2><img src="/ElPengu.png" class="i-logo">
+                What is elpengu?</h2>
+            <p>
+                This site is all about software freedom. Seeing how the internet is
+                more and more centralised into a big corporate environment, I wanted to
+                provide an alternative solution which reminds of the first day of the web.
+            </p>
+            <p>Here we promote the following concepts:</p>
+            <ul>
+                <li>Software freedom, and the use of <u>libre software</u> such as: <b>Linux</b>, <b>*BSD</b>,
+                    <b>Matrix</b>,
+                    <b>IRC</b>, <b>Fediverse</b> etc.
+                </li>
+                <li>Decentralisation. Having all your eggs in the same basket has never been a worse idea than today.
+                </li>
+                <li>Minimalism and the UNIX philosophy: all programs should do one thing, do it well and in a simple
+                    manner.
+                </li>
+                <li>Abstinence from consumerism. The web is a powerful tool, but at the same time a weapon for
+                    destruction
+                    of our attention spans.
+                </li>
+            </ul>
+            <a href="./about" class="i-button">
+            <span class="i-small-icon">
+            {{- $fname:=print "/static/icons/link-solid.svg" -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"white\"" -}}
+                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+            </span>
+                About me</a>
+
+            <h2>
+            <span class="i-big-icon">
+            {{- $fname:=print "/static/icons/server.svg" -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"#D092FC\"" -}}
+                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+            </span>
+                Services
+            </h2>
+            <p>I host multiple <b>open-source & privacy-friendly</b> services, providing an alternative to popular
+                websites.
+                Everything is <b>free as in freedom</b> (no ads, no tracking). Take a look at them below!</p>
+
+            <a href="./about" class="i-button">
+            <span class="i-small-icon">
+            {{- $fname:=print "/static/icons/link-solid.svg" -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"white\"" -}}
+                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+            </span>
+                Services</a>
+        </div>
+        <div class='right'>
+            <h2>
+             <span class="i-big-icon">
+            {{- $fname:=print "/static/icons/user.svg" -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"#D092FC\"" -}}
+                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+            </span>
+                Blog
+            </h2>
+            <p>I sometimes post about technology, philosophy and other topics of interest. Here are some of my blog
+                posts:</p>
+            <ul class='i-blog'>
+                <!-- Ranges through content/blog/*.md -->
+                {{ range where .Paginator.Pages "Section" "blog" }}
+                <li>{{.Date.Format "2006 Jan 02"}} - <a href="{{.Permalink}}">{{.Title}}</a></li>
+                {{ end }}
+            </ul>
+            <p class="i-blog"><a href="./blog">Read more ...</a></p>
+
+            <h2>
+            <span class="i-big-icon">
+            {{- $fname:=print "/static/icons/address-card.svg" -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"#D092FC\"" -}}
+                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+            </span>
+                Contact
+            </h2>
+            <p>You can contact me via <b>Email</b> or <b>Matrix</b>. No, I don't use Discord and I don't have a Discord
+                server.</p>
+
+            <h2>
+            <span class="i-big-icon">
+            {{- $fname:=print "/static/icons/dollar.svg" -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"#D092FC\"" -}}
+                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+            </span>
+                Donate
+            </h2>
+            <p>If you think this website helped you in any way, consider donating. All donations go towards improving
+                services and paying for hosting. All donators get an account on the
+                <span class='i-blog'><a href="https://element.elpengu.com">matrix.elpengu.com</a></span> homeserver.
+            </p>
+            <a href="./donate" class="i-button">
+            <span class="i-small-icon" style='margin-right: 15px; top:-1px'>
+            {{- $fname:=print "/static/icons/monero.svg" -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"white\"" -}}
+                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+            </span>
+                Donate!</a>
+        </div>
+    </div>
+    <div class='end-ring'>
+        <hr style="margin-top: 10px;"/>
+        <a href="https://beparanoid.de">
+            <img style="display: inline-block;" src="webring/paranoid.gif"
+                 alt="BeParanoid">
+        </a>
+        <a href="https://chaox.ro">
+            <img style="display: inline-block;" src="webring/chaox.png"
+                 alt="Chaox">
+        </a>
+        <a href="https://denshi.org">
+            <img style="display: inline-block;" src="webring/denshi.png"
+                 alt="DenshiSite">
+        </a>
+    </div>
+</div>
+{{ end }}
+

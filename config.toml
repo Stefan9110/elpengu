@@ -1,0 +1,49 @@
+baseURL = 'https://elpengu.com'
+languageCode = 'en-us'
+title = 'ElPengu'
+theme = 'hello-friend-ng'
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[author]
+	name = "elpengu"
+
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+	series = "series"
+
+[menu]
+	[[menu.main]]
+		identifier = "posts"
+		name       = "BLOG"
+		url        = "/blog"
+	[[menu.main]]
+		identifier = "instances"
+		name       = "SERVICES"
+		url        = "/services"
+	[[menu.main]]
+		identifier = "source"
+		name       = "SOURCE"
+		url        = "/source"
+
+
+[Permalinks]
+    post = "/posts/:filename/"
+
+[params]
+	data-theme="dark"
+	[params.logo]
+        logoMark=" "
+		logoText="ElPengu"
+		path="https://elpengu.com/static/ElPengu.png"
+		logoCursorDisabled = true
+
+    [params.footer]
+		rss = true
+		author = true
+
+      	bottomText = [
+		  "&#10084; Helping people obtain software freedom since 2021"
+      	]

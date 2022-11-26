@@ -1,0 +1,13 @@
+--2022-11-25 17:35:22--  https://elpengu.com/static/ElPengu.png
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving elpengu.com (elpengu.com)... 51.195.219.255
+Connecting to elpengu.com (elpengu.com)|51.195.219.255|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 67214 (66K) [image/png]
+Saving to: ‘ElPengu.png’
+
+     0K .......... .......... .......... .......... .......... 76% 1.10M 0s
+    50K .......... .....                                      100% 77.7M=0.04s
+
+2022-11-25 17:35:22 (1.44 MB/s) - ‘ElPengu.png’ saved [67214/67214]
+
