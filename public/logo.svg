@@ -1,7 +1,0 @@
---2022-11-25 17:36:23--  https://elpengu.com/favicon.svg
-Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
-Resolving elpengu.com (elpengu.com)... 51.195.219.255
-Connecting to elpengu.com (elpengu.com)|51.195.219.255|:443... connected.
-HTTP request sent, awaiting response... 404 Not Found
-2022-11-25 17:36:23 ERROR 404: Not Found.
-

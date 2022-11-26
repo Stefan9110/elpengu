@@ -6,7 +6,7 @@
     </div>
     <div class="i-main">
         <div class='left'>
-            <h2><img src="/ElPengu.png" class="i-logo">
+            <h2><img src="/logos/elpengu.png" class="i-logo">
                 What is elpengu?</h2>
             <p>
                 This site is all about software freedom. Seeing how the internet is
@@ -51,7 +51,7 @@
                 websites.
                 Everything is <b>free as in freedom</b> (no ads, no tracking). Take a look at them below!</p>
 
-            <a href="./about" class="i-button">
+            <a href="./services" class="i-button">
             <span class="i-small-icon">
             {{- $fname:=print "/static/icons/link-solid.svg" -}}
             {{- $path:="<path" -}}
@@ -73,12 +73,12 @@
             <p>I sometimes post about technology, philosophy and other topics of interest. Here are some of my blog
                 posts:</p>
             <ul class='i-blog'>
-                <!-- Ranges through content/blog/*.md -->
-                {{ range where .Paginator.Pages "Section" "blog" }}
+                <!-- Ranges through content/posts/*.md -->
+                {{ range where .Paginator.Pages "Section" "posts" }}
                 <li>{{.Date.Format "2006 Jan 02"}} - <a href="{{.Permalink}}">{{.Title}}</a></li>
                 {{ end }}
             </ul>
-            <p class="i-blog"><a href="./blog">Read more ...</a></p>
+            <p class="i-blog"><a href="./posts">Read more ...</a></p>
 
             <h2>
             <span class="i-big-icon">
@@ -92,6 +92,21 @@
             <p>You can contact me via <b>Email</b> or <b>Matrix</b>. No, I don't use Discord and I don't have a Discord
                 server.</p>
 
+
+            <div style='display: inline-block; width: 100%'>
+                <a href="https://matrix.to/#/@stefan911:matrix.elpengu.com" rel="noopener" target="_blank"
+                   style="float: left; margin-right: 30px"><img src="https://matrix.org/images/matrix-logo-white.svg"
+                                                                alt="Matrix" style='max-width: 80px'></a>
+                <a href="mailto:elpengu@danwin1210.de" style="float: left">
+                    <span class="i-big-icon">
+                        {{- $fname:=print "/static/icons/email.svg" -}}
+                        {{- $path:="<path" -}}
+                        {{- $fill:="<path fill=\"#ffffff\"" -}}
+                                          {{ replace (readFile $fname) $path $fill | safeHTML }}
+                    </span>
+                </a>
+            </div>
+
             <h2>
             <span class="i-big-icon">
             {{- $fname:=print "/static/icons/dollar.svg" -}}
@@ -101,7 +116,7 @@
             </span>
                 Donate
             </h2>
-            <p>If you think this website helped you in any way, consider donating. All donations go towards improving
+            <p>If you think this website helped you in any way, please consider donating. All donations go towards improving
                 services and paying for hosting. All donators get an account on the
                 <span class='i-blog'><a href="https://element.elpengu.com">matrix.elpengu.com</a></span> homeserver.
             </p>

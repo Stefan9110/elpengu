@@ -2,6 +2,7 @@ baseURL = 'https://elpengu.com'
 languageCode = 'en-us'
 title = 'ElPengu'
 theme = 'hello-friend-ng'
+rssLimit = 50
 
 [blackfriday]
   hrefTargetBlank = true
@@ -16,9 +17,9 @@ theme = 'hello-friend-ng'
 
 [menu]
 	[[menu.main]]
-		identifier = "posts"
+		identifier = "blog"
 		name       = "BLOG"
-		url        = "/blog"
+		url        = "/posts"
 	[[menu.main]]
 		identifier = "instances"
 		name       = "SERVICES"
@@ -30,14 +31,14 @@ theme = 'hello-friend-ng'
 
 
 [Permalinks]
-    post = "/posts/:filename/"
+    posts = "/posts/:filename/"
 
 [params]
 	data-theme="dark"
 	[params.logo]
         logoMark=" "
 		logoText="ElPengu"
-		path="https://elpengu.com/static/ElPengu.png"
+		path="/logos/elpengu.png"
 		logoCursorDisabled = true
 
     [params.footer]
