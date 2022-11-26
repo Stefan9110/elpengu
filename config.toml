@@ -2,6 +2,7 @@ baseURL = 'https://elpengu.com'
 languageCode = 'en-us'
 title = 'ElPengu'
 theme = 'hello-friend-ng'
+relativeURLs=true
 
 [blackfriday]
   hrefTargetBlank = true
