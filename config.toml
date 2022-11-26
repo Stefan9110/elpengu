@@ -2,7 +2,6 @@ baseURL = 'https://elpengu.com'
 languageCode = 'en-us'
 title = 'ElPengu'
 theme = 'hello-friend-ng'
-rssLimit = 50
 
 [blackfriday]
   hrefTargetBlank = true
@@ -27,7 +26,7 @@ rssLimit = 50
 	[[menu.main]]
 		identifier = "source"
 		name       = "SOURCE"
-		url        = "/source"
+		url        = "https://github.com/Stefan9110/elpengu"
 
 
 [Permalinks]
