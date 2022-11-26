@@ -20,12 +20,12 @@ also provides **torrent search**, which makes it easier than ever to find files 
 * **Donation required**: no
 * **License**: [AGPL-3.0](https://github.com/searxng/searxng)
 
-## {{< image src="/logos/librex.png" position="relative" style="height: 2.15rem; width: 2.15rem; margin-right: 15px" >}} [LibreX](https://librex.beparanoid.de)
+## {{< image src="/logos/librex.png" position="relative" style="height: 2.15rem; width: 2.15rem; margin-right: 15px" >}} [LibreX](https://librex.elpengu.com)
 
 **Search engine**, queries Google results. LibreX hides your search queries from Google and **does not require
 javascript**. Other useful features are onion link queries and (very accurate) torrent search.
 
-* **Status**: down (blocked by Google)
+* **Status**: running
 * **Javascript required**: no
 * **Donation required**: no
 * **License**: [AGPL-3.0](https://github.com/hnhx/librex)
