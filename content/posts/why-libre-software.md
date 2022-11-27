@@ -94,7 +94,7 @@ companies get more money, but over time you end up paying more than a 1 time
 purchase, and when you finally decide to end your subscription, you lose
 everything you paid for up to that point.
 
-{{< image src="/images/own-nothing.jpg" position="center" style="width: 80%" >}}
+{{< image src="/images/own-nothing.png" position="center" style="width: 55%" >}}
 
 Everything is subscription based nowadays, but one notorious actor is
 **Adobe**. It used to be that you could pay once for Photoshop, but now you can
