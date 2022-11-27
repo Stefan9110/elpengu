@@ -74,11 +74,11 @@
                 posts:</p>
             <ul class='i-blog'>
                 <!-- Ranges through content/posts/*.md -->
-                {{ range where .Paginator.Pages "Section" "posts" }}
-                <li>{{.Date.Format "2006 Jan 02"}} - <a href="{{.Permalink}}">{{.Title}}</a></li>
+                {{ range where .Paginator.Pages.ByDate.Reverse "Section" "posts" | first 8 }}
+                <li>{{.Date.Format "2006 Jan 02"}} - <a href="{{.RelPermalink}}">{{.Title}}</a></li>
                 {{ end }}
             </ul>
-            <p class="i-blog"><a href="./posts">Read more ...</a></p>
+            <p class="i-blog"><a href="./posts">Read more...</a></p>
 
             <h2>
             <span class="i-big-icon">

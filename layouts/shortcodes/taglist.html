@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="taglist">
+    <div class='tag-title'>
+        <h1>Tags</h1>
+        <hr style="margin-top: 10px;"/>
+    </div>
+    <div class='tag-content'>
+        {{ range where .Site.Pages "Kind" "term" }}
+        <span class="tag">
+            <a href="{{ .RelPermalink }}">#{{ .Title }}</a>
+        </span>
+        {{ end }}
+    </div>
+</div>
