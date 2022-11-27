@@ -9,7 +9,7 @@ date: 2022-11-26T18:42:53+02:00
 
 Let me ask you a question: **do you control your software or does it control you?**
 This should be an obvious one, you would think. *Of course, I own my software...
-After all, I decide when I open what app, for how long I use it and how I use.*
+After all, I decide when I open what app, how long I use it and how I use.*
 
 Is that right? Do you really decide how much time you spend on each app and
 how you use it?
@@ -62,7 +62,7 @@ privacy is a lie and I will prove it to you:
 * You wouldn't show **your own parents** your phone's content.
 * You wouldn't let a random person on the street look into your laptop.
 * You wouldn't show your gallery to your employer.
-* You wouldn't want an anonymous person know where you live.
+* You wouldn't want an anonymous person to know where you live.
 
 However, when it comes to online privacy, we let **every big tech company**
 know us better than we know ourselves. **YouTube** knows exactly the topics you are
