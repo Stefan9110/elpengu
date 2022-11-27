@@ -5,7 +5,7 @@
     </div>
     <div class='tag-content'>
         {{ range where .Site.Pages "Kind" "term" }}
-        <span class="tag">
+        <span class="listed-tag">
             <a href="{{ .RelPermalink }}">#{{ .Title }}</a>
         </span>
         {{ end }}

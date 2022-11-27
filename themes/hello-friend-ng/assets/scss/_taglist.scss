@@ -19,22 +19,22 @@
 
 .tag-content {
   text-align: center;
-  margin:20px;
+  margin: 20px;
 }
 
 .tag-title hr {
   width: 85%;
 }
 
-.tag a {
+.listed-tag a {
   text-decoration: none;
 }
 
-.tag a:hover {
-  color: white;
+.listed-tag a:hover {
+  color: #D092FC;
 }
 
-.tag:not(:last-child)::after {
+.listed-tag:not(:last-child)::after {
   content: "•";
   padding: 1px;
 }

@@ -35,6 +35,7 @@ relativeURLs=true
 
 [params]
 	data-theme="dark"
+	enableSharingButtons=false
 	[params.logo]
         logoMark=" "
 		logoText="ElPengu"

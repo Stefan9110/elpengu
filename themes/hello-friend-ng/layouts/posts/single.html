@@ -7,7 +7,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        {{ i18n "readingTime" .Page.ReadingTime }}
+        {{ i18n "readingTime" .Page.ReadingTime }} read
 
         {{ if .IsTranslated }} | {{ i18n "postAvailable" }}
           {{ range .Translations }}
@@ -85,7 +85,7 @@
         {{ if .Site.Params.dateformNumTime }}
           {{ dateFormat .Site.Params.dateformNumTime .Date.Local }}
         {{ else }}
-          {{ dateFormat "2006-01-02 15:04" .Date.Local }}
+          {{ dateFormat "02 Jan 2006 15:04" .Date.Local }}
         {{ end }}
 
         {{ if .Lastmod }} 
@@ -93,7 +93,7 @@
             {{ if .Site.Params.dateformNumTime }}
               ({{ i18n "lastModified" }}: {{ dateFormat .Site.Params.dateformNumTime .Lastmod.Local }})
             {{ else }} 
-              ({{ i18n "lastModified" }}: {{ dateFormat "2006-01-02 15:04" .Lastmod.Local }})
+              ({{ i18n "lastModified" }}: {{ dateFormat "02 Jan 2006 15:04" .Lastmod.Local }})
             {{ end }}
           {{ end }}
         {{ end }}
@@ -108,7 +108,7 @@
           </svg>
 
           <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
-          @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}{{ end }}
+          @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "02 Jan 2006" .GitInfo.AuthorDate.Local }}{{ end }}
         </p>
       {{- end }}
     </div>

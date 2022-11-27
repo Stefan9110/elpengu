@@ -50,7 +50,12 @@
   .post {
     &-title {
       font-size: 1rem;
-      margin: 5px 0 5px 0;
+      margin: 10px 0 5px 0;
+    }
+
+    &-metadata {
+      font-size: 0.9rem;
+      margin: 5px;
     }
 
     &-year {
@@ -65,14 +70,18 @@
     }
 
     &-item {
-      border-bottom: 1px grey dashed;
+      border-bottom: 1px grey solid;
 
       a {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        padding: 12px 0;
+        padding: 8px 0;
         text-decoration: none;
+      }
+
+      a:hover {
+        color: #D092FC;
       }
     }
 
