@@ -25,7 +25,7 @@ also provides **torrent search**, which makes it easier than ever to find files 
 **Search engine**, queries Google results. LibreX hides your search queries from Google and **does not require
 javascript**. Other useful features are onion link queries and (very accurate) torrent search.
 
-* **Status**: running
+* **Status**: down (blocked by Google); redirecting to another instance
 * **Javascript required**: no
 * **Donation required**: no
 * **License**: [AGPL-3.0](https://github.com/hnhx/librex)

@@ -4,12 +4,7 @@ tags: [
 "linux",
 "open-source",
 ]
-categories: [
-"Philosophy",
-"Software"
-]
+draft: true
 date: 2022-11-26T18:42:53+02:00
 ---
-
-Intro
 
