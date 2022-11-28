@@ -1,0 +1,11 @@
+<div class='donation'>
+        <span class="donation-icon" style='margin-right: 15px;'>
+            {{- $fname:=print "/static/icons/" ( .Get 0 ) -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"#D092FC\"" -}}
+                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+        </span>
+    <p class='donation-text'>
+        {{- ( .Get 1 ) -}}
+    </p>
+</div>

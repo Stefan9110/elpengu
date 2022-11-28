@@ -1,0 +1,38 @@
+.donation {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  border: 1px solid #A337F0;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  display: flex;
+}
+
+.donation-icon {
+  display: inline-block;
+  width: 10%;
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.donation-text {
+  margin-top:7px;
+  display: block;
+  font-size: 12px;
+  color: #ffffff;
+  max-width: 85%;
+  overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 768px) {
+  .donation-icon {
+    width: 40%;
+  }
+  .donation-text {
+    width: 75%;
+  }
+}

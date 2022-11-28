@@ -12,8 +12,6 @@ relativeURLs=true
 
 [taxonomies]
 	tag = "tags"
-	category = "categories"
-	series = "series"
 
 [menu]
 	[[menu.main]]
