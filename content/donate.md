@@ -18,12 +18,12 @@ the future, however keep in mind that XMR is the best way to manage your money.
 A one time donation grants you access to the
 [matrix.elpengu.com](https://element.elpengu.com) homeserver for **1 year**. Accounts on
 the Matrix homeserver are restricted to donators due to the huge amount of
-processing power and storage needed to mentain this service.
+processing power and storage needed to maintain this service.
 
 ## Hosting costs
 **elpengu.com** is hosted at [OVH](https://www.ovhcloud.com/), on a regular
-VPS. Hostings costs are around **280€** per year for the VPS and **12€** per year for
-the DNS. I am a student and I'm currently paying for these services from my own
+VPS. Hosting costs are around **280€** per year for the VPS and **12€** per year for
+the DNS. I am a student, so I'm currently paying for these services from my own
 money, so any donations are appreciated.
 
 Donating helps me pay for hosting and allows me to expand VPS specifications,
