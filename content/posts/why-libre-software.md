@@ -149,8 +149,6 @@ currently using. Integrating as many of the programs listed below as possible
 will give you a better computer experience, better privacy and as a result, a
 better lifestyle.
 
-##
-
 ### Linux
 
 [{{< image src="/images/tux.png" position="left" style="width: 20%; margin-right: 20px" >}}](https://www.kernel.org/)
@@ -175,7 +173,7 @@ that for maximum privacy you need **to configure** Firefox.
 
 This is inconvenient, so people have created [some forks](https://librewolf.net/) in order to solve this problem.
 
-##    
+###    
 
 ### Element
 
@@ -189,7 +187,7 @@ with each other through multiple servers. With the power of decentralisation,
 your data is safe and, in case of a server being compromised, you can always
 switch to another.
 
-##    
+###    
 
 ### Signal
 
