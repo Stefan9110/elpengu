@@ -14,9 +14,10 @@
 
 .donation-icon {
   display: inline-block;
-  width: 10%;
+  width: 8%;
   max-width: 40px;
   margin-right: 10px;
+  margin-top: 5px;
 }
 
 .donation a {
@@ -27,16 +28,28 @@
   max-width: 85%;
   overflow-wrap: break-word;
 }
+//
+//.donation span {
+//  text-decoration: none;
+//  display: block;
+//  font-size: 13px;
+//  color: #ffffff;
+//  max-width: 85%;
+//  overflow-wrap: break-word;
+//}
 
 .donation a:hover {
   color: #D092FC;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 400px) {
   .donation-icon {
     width: 40%;
   }
-  .donation-text {
+  //.donation span {
+  //  width: 75%;
+  //}
+  .donation a {
     width: 75%;
   }
 }
