@@ -1,7 +1,7 @@
 #
 {{< center-title "Donate" >}}
 
-{{< donation-box monero.svg 8BkNMDwR4h3A25xxx4q6zPCVHKuDZSbC7NaYAC3HT8dJ89dXmf5WxWXUWCHCbCDUMjEFtBEu1sZXwRw18RYBf2eG7mg4YRy >}}
+{{< donation-box monero.svg 8BkNMDwR4h3A25xxx4q6zPCVHKuDZSbC7NaYAC3HT8dJ89dXmf5WxWXUWCHCbCDUMjEFtBEu1sZXwRw18RYBf2eG7mg4YRy "/qr/monero-qr.png" >}}
 
 ##
 

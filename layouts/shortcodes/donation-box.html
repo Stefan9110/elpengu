@@ -5,7 +5,7 @@
             {{- $fill:="<path fill=\"#D092FC\"" -}}
                               {{ replace (readFile $fname) $path $fill | safeHTML }}
         </span>
-    <p class='donation-text'>
+    <a href="{{- ( .Get 2 ) -}}">
         {{- ( .Get 1 ) -}}
-    </p>
+    </a>
 </div>
