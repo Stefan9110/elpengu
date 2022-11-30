@@ -1,11 +1,12 @@
 #!/bin/sh
 
 # Editable variables. Change to your liking
-BLOG_PATH="$HOME/proj/hugo/elpengu"
+BLOG_PATH="$(dirname $(realpath $0))/.."
 [ -z $EDITOR ] && EDITOR="vim"
 
 # Edit a blog post. If given post does not exist, create one.
 edit() {
+	[ -z $1 ] && echo "You need to provide a blog title." && exit 1
 	POST_PATH="$BLOG_PATH/content/posts/${1}.md"
 	[ -f "$POST_PATH" ] && eval $EDITOR "$POST_PATH" && exit 0
 
@@ -15,10 +16,14 @@ edit() {
 }
 
 publish() {
-	echo "Functionality not yet implemented. Sorry :("
+	cd "$BLOG_PATH"
+	hugo
+	# rsync script must be created manually
+	$HOME/.local/bin/sync-elpengu "$BLOG_PATH/public/*" && echo "Site synced successfully" || echo "An error occured while syncing the site."
 }
 
 remove() {
+	[ -z $1 ] && echo "You need to provide a blog title." && exit 1
 	POST_PATH="$BLOG_PATH/content/posts/${1}.md"
 	[ ! -f "$POST_PATH" ] && echo "Post does not exist. Nothing to remove." && exit 1
 
@@ -28,14 +33,13 @@ remove() {
 }
 
 [ -z $1 ] && echo "Please choose between [edit | publish | remove]." && exit 1
-[ -z $2 ] && echo "You need to provide a blog title." && exit 1
 
 case $(echo $1 | tr '[:upper:]' '[:lower:]') in
 	"edit")
 		edit "$2"
 		;;
 	"publish")
-		publish "$2"
+		publish
 		;;
 	"remove")
 		remove "$2"
