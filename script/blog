@@ -27,7 +27,7 @@ remove() {
 	POST_PATH="$BLOG_PATH/content/posts/${1}.md"
 	[ ! -f "$POST_PATH" ] && echo "Post does not exist. Nothing to remove." && exit 1
 
-	[ ! -d "$BLOG_PATH/.trash" ] mkdir -p "$BLOG_PATH/.trash" 
+	[ ! -d "$BLOG_PATH/.trash" ] && mkdir -p "$BLOG_PATH/.trash" 
 	mv "$POST_PATH" "$BLOG_PATH/.trash/"
 	echo "Post successfully deleted. If you need to restore it, you can find it in $BLOG_PATH/.trash/${1}.md"
 }
