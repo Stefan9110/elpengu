@@ -17,6 +17,7 @@ edit() {
 
 publish() {
 	cd "$BLOG_PATH"
+	rm -rf "public/"
 	hugo
 	# rsync script must be created manually
 	$HOME/.local/bin/sync-elpengu "$BLOG_PATH/public/" && echo "Site synced successfully" || echo "An error occured while syncing the site."
