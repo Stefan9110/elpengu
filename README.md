@@ -113,8 +113,15 @@ $ blog publish
 ```
 
 #### ! ! ! Rsync permissions
-Your site directory must have read and write permissions for the user you are logging in with. To ensure this, simply change your site directory's owner to the user you are **ssh logging in** with.
+Your site directory must have read and write permissions for the user you are
+logging in with. To ensure this, simply change your site directory's owner to
+the user you are **ssh logging in** with.
 
 ```sh
 $ chown your_user /path/to/dir
 ```
+
+## License
+This project is licensed under `AGPL-3.0`. For more information about
+licensing, please see the
+[LICENSE](https://github.com/Stefan9110/elpengu/blob/master/LICENSE) file.
