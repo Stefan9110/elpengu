@@ -1,4 +1,9 @@
+<img align="right" src="https://elpengu.com/logos/elpengu.png" height="235" width="235">
+
 # [ElPengu website](https://elpengu.com)
+
+**ElPengu** is a site about **software freedom**. Created in 2021, this site aims to promote the benefits of software freedom to as many people as possible, in a layout that reminds of the old web days, but at the same time provides modern features and design. This website is also used as a homepage for the many privacy-friendly instances hosted on my server.
+ElPengu uses **no javascript, trackers or ads** and is statically generated using **Hugo**.
 
 ## Hugo
 This website is built with [Hugo](https://gohugo.io/). If you don't have
@@ -58,7 +63,7 @@ its source.
 
 ## Deploying
 Deploying can be either done by copying all files from `public/` after build to
-a server, or by using the [elpengu site script](#elpengu’s-site-script).
+a server, or by using the [elpengu site script](#elpengus-site-script).
 
 If you want to use the `blog publish` functionality, you must create a new
 script in the `~/.local/bin` directory, with the name `sync-elpengu`. This
