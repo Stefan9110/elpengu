@@ -24,7 +24,7 @@ $ sudo go install github.com/gohugoio/hugo@latest
 ## How to build
 First, pull the root directory to your filesystem:
 ```sh
-$ git pull https://github.com/Stefan9110/elpengu.git
+$ git pull https://git.elpengu.com/stefan911/elpengu.git
 $ cd elpengu/
 ```
 Using hugo, this site can be easily built using:
