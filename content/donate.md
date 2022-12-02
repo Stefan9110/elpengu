@@ -12,13 +12,43 @@ Monero and it's advantages over other cryptocurrencies
 [here](https://www.getmonero.org/).
 
 I will probably add more donation options such as **Bitcoin** or **Paypal** in
-the future, however keep in mind that XMR is the best way to manage your money.
+the future, however Monero is the preferred currency due to its privacy
+features.
 
 ## Advantages of donators
-A one time donation grants you access to the
-[matrix.elpengu.com](https://element.elpengu.com) homeserver for **1 year**. Accounts on
-the Matrix homeserver are restricted to donators due to the huge amount of
-processing power and storage needed to maintain this service.
+
+Minimum donation for services: **0.2 XMR**
+
+A one time donation grants you the following for **1 year**:
+* Account on [Gitea](https://git.elpengu.com)
+* Account on the Matrix homeserver [matrix.elpengu.com](https://element.elpengu.com)
+* Email account with the format **name@‎elpengu.com**
+* **(Permanent)** Your name on this page and my gratitude :)
+
+#### Why do these services require a donation?
+Simply because they take a lot of resources. **75%** of the server resources go
+to these 3 services, so offering them to everyone would make it impossible to
+sustain the server costs.
+
+#### After donating
+To claim your services, contact me via [Email](mailto:contact@elpengu.com) or [Matrix](https://matrix.to/#/@stefan911:matrix.elpengu.com), specifying the **payment proof** (transaction key).
+
+#### Terms
+ElPengu promotes software freedom and anonymity online, thus some 
+terms of service must be put in place to ensure operability while preserving
+your anonymity.
+
+Using ElPengu's private services, **you agree to**:
+* Not engage in any illegal activites
+* Not interrupt in any way the server's functionality (i.e. DoS, Spam etc.)
+* Not disturb other ElPengu service users' experience
+* Report any bugs found in the server's infrastructure
+
+These terms are subject to change, but the main idea is: **use what's yours in
+a way that does not destroy what's others'**. 
+
+Breaking these terms may result in a temporary or permanent ban from using
+ElPengu's private services.
 
 ## Hosting costs
 **elpengu.com** is hosted at [OVH](https://www.ovhcloud.com/), on a regular

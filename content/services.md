@@ -52,6 +52,29 @@ provides a clean experience and has the most features out of all Matrix clients.
 * **Donation required**: no
 * **License**: [Apache-2.0](https://github.com/vector-im/element-web)
 
+## {{< image src="/logos/gitea.png" position="relative" style="height: 2.15rem; width: 2.45rem; margin-right: 15px" >}} [Gitea](https://git.elpengu.com)
+
+**Git service**, having a web interface similar to GitHub. Supports issues,
+pull requests, organizations and all the other good features you would expect
+from a git hosting service.
+
+* **Status**: running
+* **Javascript required**: yes (for full functionality)
+* **Donation required**: yes [(see why)](https://elpengu.com/donate)
+* **License**: [MIT](https://github.com/go-gitea/gitea)
+
+
+## {{< big-icon email >}} [Mail Server]()
+
+**Mail server**, able to both send and receive mail. Does not include a mail client, you must use your own (example: **thunderbird**, **mutt**). 
+
+Mail format: **username@‎elpengu.com**
+
+* **Status**: running
+* **Javascript required**: N/A
+* **Donation required**: yes [(see why)](https://elpengu.com/donate)
+* **License**: [Eclipse Public License / IBM Public License 1.0](https://github.com/vdukhovni/postfix)
+
 ## {{< image src="/logos/invidious.png" position="relative" style="height: 2.15rem; width: 2.45rem; margin-right: 15px" >}} [Invidious](https://yt.elpengu.com)
 
 **YouTube frontend**, providing a lightweight, ad-free, tracker-free platform for watching YouTube videos. You have the
@@ -93,7 +116,6 @@ I am planning on adding even more instances to this list, considering this proje
 * **Mastodon** (Fediverse's alternative to Twitter)
 * **XMPP** (Similar to Matrix, decentralised chatting protocol)
 * **IRC** (Centralised, anonymous chatting protocol)
-* **Email** (elpengu's own email server)
 
 To help extend this project and add more privacy-friendly frontends, please
 consider [donating](https://elpengu.com/donate)!
