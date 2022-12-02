@@ -25,7 +25,7 @@ relativeURLs=true
 	[[menu.main]]
 		identifier = "source"
 		name       = "SOURCE"
-		url        = "https://github.com/Stefan9110/elpengu"
+		url        = "https://git.elpengu.com/stefan911/elpengu"
 
 
 [Permalinks]
