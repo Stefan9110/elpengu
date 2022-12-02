@@ -98,8 +98,16 @@
                    style="float: left; margin-right: 30px"><img src="/logos/matrix-logo-white.svg"
                                                                 alt="Matrix" style='max-width: 80px'></a>
                 <a href="mailto:contact@elpengu.com" style="float: left">
-                    <span class="i-big-icon">
+                    <span class="i-big-icon" style="margin-right: 30px">
                         {{- $fname:=print "/static/icons/email.svg" -}}
+                        {{- $path:="<path" -}}
+                        {{- $fill:="<path fill=\"#ffffff\"" -}}
+                                          {{ replace (readFile $fname) $path $fill | safeHTML }}
+                    </span>
+                </a>
+                <a href="/keys/contact-gpg-key.txt" style="float: left">
+                    <span class="i-big-icon">
+                        {{- $fname:=print "/static/icons/key.svg" -}}
                         {{- $path:="<path" -}}
                         {{- $fill:="<path fill=\"#ffffff\"" -}}
                                           {{ replace (readFile $fname) $path $fill | safeHTML }}
