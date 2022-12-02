@@ -3,21 +3,19 @@
 
 {{< donation-box monero.svg 8BkNMDwR4h3A25xxx4q6zPCVHKuDZSbC7NaYAC3HT8dJ89dXmf5WxWXUWCHCbCDUMjEFtBEu1sZXwRw18RYBf2eG7mg4YRy "/qr/monero-qr.png" >}}
 
+{{< donation-box paypal.svg "stefan@elpengu.com" "https://paypal.me/elpengu" "30px" >}}
+
 ##
 
 Thank you for considering donating! 😄
 
-Currently, you can only donate through **XMR** (Monero). You can read more about
-Monero and it's advantages over other cryptocurrencies
+The recommended donation method is using **XMR** (Monero). Payments are processed faster and in a private manner. 
+You can read more about Monero and it's advantages over other cryptocurrencies
 [here](https://www.getmonero.org/).
-
-I will probably add more donation options such as **Bitcoin** or **Paypal** in
-the future, however Monero is the preferred currency due to its privacy
-features.
 
 # {{< big-icon dollar >}} Advantages for donators
 
-Minimum donation for services: **0.2 XMR**
+Minimum donation for services: **0.2 XMR** / equivalent in **USD**
 
 A one time donation grants you the following for **1 year**:
 * Account on [Gitea](https://git.elpengu.com)
