@@ -14,7 +14,7 @@ After all, I decide when I open what app, how long I use it and how I use.*
 Is that right? Do you really decide how much time you spend on each app and
 how you use it?
 
-{{< image src="/images/pepe-computer-addicted.jpg" position="center" style="width: 80%" >}}
+{{< image src="/images/pepe-computer-addicted.webp" position="center" style="width: 80%" >}}
 
 # The problem with modern day software
 
@@ -26,7 +26,7 @@ closed-source projects have total control over their users through their
 
 Let us analyze an example of said control:
 
-[{{< image src="/images/discord-tos-1.png" position="center" style="width: 80%" >}}](https://discord.com/terms#5)
+[{{< image src="/images/discord-tos-1.webp" position="center" style="width: 80%" >}}](https://discord.com/terms#5)
 {{< center "(extracted from Discord TOS)" >}}
 
 As we can see, you offer Discord the permission to almost do anything with your content, which includes:
@@ -44,7 +44,7 @@ a Chinese company. Thus, all of your data on Discord now belongs to the CCP as
 well, because all Chinese companies are required to report back the data they
 collect to the government.
 
-[{{< image src="/images/discord-privacy-2.png" position="center" style="width: 80%" >}}](https://discord.com/privacy#6)
+[{{< image src="/images/discord-privacy-2.webp" position="center" style="width: 80%" >}}](https://discord.com/privacy#6)
 {{< center "(your data is not yours and we 'may' keep it for as long as we want)" >}}
 
 Examples of abuses of privacy and control over users can be seen in **all** closed-source projects, without exception.
@@ -76,7 +76,7 @@ platform for as much as possible: that's how they maximize their profits. So,
 they will do anything in their power to have a monopoly on your attention span.
 It's not unusual to see people glued to their phone's screen for 8 hours a day.
 
-{{< image src="/images/wojak-phone-bed.png" position="center" style="width: 80%" >}}
+{{< image src="/images/wojak-phone-bed.webp" position="center" style="width: 80%" >}}
 
 Everything you do online is influenced by these companies, in one way or
 another. They control what's *cool*, trends, ideas, mentalities, and the worst
@@ -94,7 +94,7 @@ companies get more money, but over time you end up paying more than a 1 time
 purchase, and when you finally decide to end your subscription, you lose
 everything you paid for up to that point.
 
-{{< image src="/images/own-nothing.png" position="center" style="width: 55%" >}}
+{{< image src="/images/own-nothing.webp" position="center" style="width: 55%" >}}
 
 Everything is subscription based nowadays, but one notorious actor is
 **Adobe**. It used to be that you could pay once for Photoshop, but now you can
@@ -130,7 +130,7 @@ iPhones](https://www.phonearena.com/news/galaxy-S22-vs-iphone-14-apple-isnt-the-
 
 # The solution: free and open-source software
 
-{{< image src="/images/solution-pepe.png" position="center" style="width: 80%" >}}
+{{< image src="/images/solution-pepe.webp" position="center" style="width: 80%" >}}
 
 ## What is free software?
 
@@ -151,7 +151,7 @@ better lifestyle.
 
 ### Linux
 
-[{{< image src="/images/tux.png" position="left" style="width: 20%; margin-right: 20px" >}}](https://www.kernel.org/)
+[{{< image src="/images/tux.webp" position="left" style="width: 20%; margin-right: 20px" >}}](https://www.kernel.org/)
 
 [Linux](https://www.kernel.org/) is the most popular open-source project. It is
 a kernel written entirely in C, and it is widely used on servers, but also on
@@ -163,7 +163,7 @@ laptop with Linux. A post about Linux will come by soon.
 
 ### Firefox
 
-[{{< image src="/images/firefox.png" position="left" style="width: 20%; margin-right: 20px" >}}](https://www.mozilla.org/en-US/firefox/new/)
+[{{< image src="/images/firefox.webp" position="left" style="width: 20%; margin-right: 20px" >}}](https://www.mozilla.org/en-US/firefox/new/)
 
 [Firefox](https://www.mozilla.org/en-US/firefox/new/) is the go-to browser for
 better privacy, while keeping a good user experience. For the average user,
