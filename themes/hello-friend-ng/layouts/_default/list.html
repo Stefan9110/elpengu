@@ -2,7 +2,9 @@
     {{ $paginator := .Paginate .Data.Pages }}
 
     <main class="posts">
+        {{ if .Params.ShowTitle }}
         <h1>{{ .Title }}</h1>
+        {{ end }}
 
         {{ if .Content }}
             <div class="content">{{ .Content }}</div>

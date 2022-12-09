@@ -15,8 +15,8 @@ relativeURLs=true
 
 [menu]
 	[[menu.main]]
-		identifier = "blog"
-		name       = "BLOG"
+		identifier = "articles"
+		name       = "ARTICLES"
 		url        = "/posts"
 	[[menu.main]]
 		identifier = "instances"

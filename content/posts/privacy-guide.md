@@ -1,6 +1,7 @@
 ---
 title: "Online Privacy Guide"
 date: 2022-12-08T09:41:23+02:00
+showTitle: true
 draft: true
 toc: false
 images:
@@ -27,14 +28,14 @@ steps required to ensure better privacy.
 
 # Identifying a threat model
 
+{{< image src="/images/pepe-paranoid.webp" position="right" style="width: 40%; margin: 15px" >}}
+
 You cannot have both **privacy** and **convenience**. There is always a tradeoff
 between the two. For this reason it is important to establish a personal threat
 model you want to protect against, to know how far to go. The goal should be
 obtaining a balance between the two, not going all out on one.
 
-{{< image src="/images/pepe-paranoid.webp" position="center" style="width: 50%" >}}
-
-### Possible thread models
+## Possible threat models
 
 1. Strangers
 2. Family, friends
@@ -43,12 +44,12 @@ obtaining a balance between the two, not going all out on one.
 5. Governments
 6. **Everyone**
 
-The lower on the list, the higher privacy you should seek. This guide will help
+The higher on the list, the higher privacy you should seek. This guide will help
 you improve only your online privacy. If you set a thread model between the
 last two, you should also look into hardware privacy, such as [libre boot](https://libreboot.org/)
 and [degoogled Android phone](https://grapheneos.org/).
 
-# Step 1 - Browser
+# {{< color "Step 1" "#D092FC" >}} ➤ Browser
 
 The browser is the program you use the most, so it makes sense to secure it.
 There are a few things to look out for in a good browser:
@@ -77,6 +78,7 @@ experience with tinkering with configurations.
 
 ## Browser list
 
+[//]: # (Firefox)
 <details class="post-box">
 <summary class="post-box-title">
 <img class='box-logo' src="/images/firefox.webp">
@@ -104,6 +106,7 @@ If you are not willing to configure Firefox, you should look into its forks that
 </span>
 </details>
 
+[//]: # (Librewolf)
 <details class="post-box">
 <summary class="post-box-title">
 <img class='box-logo' src="/logos/librewolf.svg">
@@ -126,6 +129,24 @@ middle ground for privacy and convenience. Definitely use over vanilla Firefox.
 </span>
 </details>
 
+[//]: # (Tor Browser)
+<details class="post-box">
+<summary class="post-box-title">
+<img class='box-logo' src="/logos/tor-browser.svg">
+<h2>Tor Browser</h2>
+<p class="box-privacy">{{< text-icon privacy "#00AA00" >}} Privacy Level: <b><span style="color: #00AA00">High</span></b></p>
+</summary>
+<hr>
+
+**TODO**: add details here
+
+<span class="i-blog">
+<a style='margin-right: 10px' href="">[Download]</a>
+<a href="">[Website]</a>
+</span>
+</details>
+
+[//]: # (IceCat)
 <details class="post-box">
 <summary class="post-box-title">
 <img class='box-logo' src="/logos/icecat.svg">
@@ -148,11 +169,38 @@ high enough you shouldn't use websites that require javascript anyway.
 </span>
 </details>
 
-## [Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium)
+[//]: # (Brave)
+<details class="post-box">
+<summary class="post-box-title">
+<img class='box-logo' src="/logos/brave.svg">
+<h2>Brave</h2>
+<p class="box-privacy">{{< text-icon privacy "#FFAA00" >}} Privacy Level: <b><span style="color: #FFAA00">Medium</span></b></p>
+</summary>
+<hr>
 
-[{{< image src="/logos/chromium.svg" position="center" style="width: 25%;" >}}](https://github.com/ungoogled-software/ungoogled-chromium)
+**Brave** is the browser based on Chromium that advertised itself as **the**
+browser for privacy. It comes with good privacy features outside the box,
+however it is known for adding spyware features in the past, such as
+**telemetry**, **auto-updates** and **Brave Rewards**.
 
-{{< text-icon privacy "#00FF11" >}} Privacy level: **{{< color "High" "#00FF11" >}}**
+Should only be used if Chromium engine is required and Ungoogled Chromium cannot be
+compiled in a reasonable amount of time, or the binary cannot be installed, for some reason.
+
+<span class="i-blog">
+<a style='margin-right: 10px' href="">[Download]</a>
+<a href="">[Website]</a>
+</span>
+</details>
+
+
+[//]: # (Ungoogled Chromium)
+<details class="post-box">
+<summary class="post-box-title">
+<img class='box-logo' src="/logos/chromium.svg">
+<h2 style="font-size: 32px">Ungoogled Chromium</h2>
+<p class="box-privacy">{{< text-icon privacy "#00AA00" >}} Privacy Level: <b><span style="color: #00AA00">High</span></b></p>
+</summary>
+<hr>
 
 **Ungoogled Chromium** is Google Chrome without **trackers**, **ads**,
 **phoning home**, **Google search engine**, **Google Extension Store**,
@@ -163,25 +211,16 @@ Its downside is that you have to compile it and it is not user-friendly,
 installing extensions being a tedious task. However, if you need a chromium
 based browser, it is the best solution out there.
 
-## [Brave](https://brave.com/)
+<span class="i-blog">
+<a style='margin-right: 10px' href="https://github.com/ungoogled-software/ungoogled-chromium">[Download & Website]</a>
+</span>
+</details>
 
-[{{< image src="/logos/brave.svg" position="center" style="width: 25%;" >}}](https://brave.com/)
+##
 
-{{< text-icon privacy "#FFAA00" >}} Privacy level: **{{< color "Medium" "#FFAA00" >}}**
+# {{< color "Step 2" "#D092FC" >}} ➤ Privacy-friendly online services
 
-**Brave** is the browser based on Chromium that advertised itself as **the**
-browser for privacy. It comes with good privacy features outside the box,
-however it is known for adding spyware features in the past, such as
-**telemetry**, **auto-updates** and **Brave Rewards**.
-
-Should be used if Chromium engine is required and Ungoogled Chromium cannot be
-compiled in a reasonable amount of time.
-
-### Now that you chose a browser, we should focus on your web activity.
-
-# Step 2 - Privacy friendly services
-
-Even if you have a secure browser, your data is still accesible if you **simply
+Even if you have a secure browser, your data is still accessible if you **simply
 hand it over** to Google, Facebook or other companies. You should aim to
 replace **all of your services** from these companies with privacy-friendly
 alternatives.

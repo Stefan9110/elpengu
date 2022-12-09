@@ -1,4 +1,10 @@
-# Services
+---
+title: "Services"
+showTitle: false
+---
+
+####
+{{< center-title "Services" >}}
 
 I think all of us noticed that browsing the web nowadays means going to the same websites all over again. Before you
 start saying that you also *use apps on your phone*, remember that those are most likely websites as well (such as

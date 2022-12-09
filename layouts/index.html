@@ -63,15 +63,14 @@
         <div class='right'>
             <h2>
              <span class="i-big-icon">
-				{{- $fname:=print "/static/icons/user.svg" -}}
+				{{- $fname:=print "/static/icons/book.svg" -}}
 				{{- $path:="<path" -}}
 				{{- $fill:="<path fill=\"#D092FC\"" -}}
 				{{ replace (readFile $fname) $path $fill | safeHTML }}
             </span>
-                Blog
+                Articles
             </h2>
-            <p>I sometimes post about technology, philosophy and other topics of interest. Here are some of my blog
-                posts:</p>
+            <p>I sometimes post about technology and its implications in real life, philosophy and other topics of interest. Here are some of my articles:</p>
             <ul class='i-blog'>
                 <!-- Ranges through content/posts/*.md -->
                 {{ range where .Paginator.Pages.ByDate.Reverse "Section" "posts" | first 8 }}

@@ -1,7 +1,9 @@
 ---
 title: "About me"
-date: 2022-11-25T17:07:49+02:00
+showTitle: false
 ---
+
+{{< center-title "About me" >}}
 
 ## {{< small-icon user-tie-solid >}} Who am I?
 

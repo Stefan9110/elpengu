@@ -18,9 +18,11 @@
     </div>
 
     <article>
+      {{ if .Params.ShowTitle }}
       <h1 class="post-title">
         <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
       </h1>
+      {{ end }}
 
       {{ with .Params.Description }}
         <div class="post-excerpt">{{ . }}</div>

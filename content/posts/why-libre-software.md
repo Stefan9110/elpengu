@@ -1,5 +1,6 @@
 ---
 title: "Why you should use libre software"
+showTitle: true
 tags: [
 "open-source",
 "philosophy"

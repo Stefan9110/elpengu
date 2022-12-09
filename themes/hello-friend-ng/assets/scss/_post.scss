@@ -32,7 +32,7 @@
   margin-bottom: 30px;
 }
 
-.post-box-title h2:hover {
+.post-box-title:hover {
   color: #D092FC
 }
 
@@ -63,9 +63,9 @@
 //  color: white;
 //}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .post-box-title {
-    height: 100px;
+    height: auto;
     text-align: center;
     justify-content: center;
   }
