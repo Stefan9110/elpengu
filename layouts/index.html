@@ -15,13 +15,13 @@
             </p>
             <p>Here we promote the following concepts:</p>
             <ul>
-                <li>Software freedom, and the use of <u>libre software</u> such as: <b>Linux</b>, <b>*BSD</b>,
+                <li>Software freedom, and the use of <b>libre software</b> such as: <b>Linux</b>, <b>*BSD</b>,
                     <b>Matrix</b>,
                     <b>IRC</b>, <b>Fediverse</b> etc.
                 </li>
-                <li>Decentralisation. Having all your eggs in the same basket has never been a worse idea than today.
+				<li>Decentralisation. Having all your eggs in the same basket has never been a worse idea than today.
                 </li>
-                <li>Minimalism and the UNIX philosophy: all programs should do one thing, do it well and in a simple
+				<li>Minimalism and the UNIX philosophy: all programs should do one thing, do it well and in a simple
                     manner.
                 </li>
                 <li>Abstinence from consumerism. The web is a powerful tool, but at the same time a weapon for
@@ -31,19 +31,19 @@
             </ul>
             <a href="./about" class="i-button">
             <span class="i-small-icon">
-            {{- $fname:=print "/static/icons/link-solid.svg" -}}
-            {{- $path:="<path" -}}
-            {{- $fill:="<path fill=\"white\"" -}}
-                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+				{{- $fname:=print "/static/icons/link-solid.svg" -}}
+	            {{- $path:="<path" -}}
+				{{- $fill:="<path fill=\"white\"" -}}
+				{{ replace (readFile $fname) $path $fill | safeHTML }}
             </span>
                 About me</a>
 
             <h2>
             <span class="i-big-icon">
-            {{- $fname:=print "/static/icons/server.svg" -}}
-            {{- $path:="<path" -}}
-            {{- $fill:="<path fill=\"#D092FC\"" -}}
-                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+				{{- $fname:=print "/static/icons/server.svg" -}}
+				{{- $path:="<path" -}}
+				{{- $fill:="<path fill=\"#D092FC\"" -}}
+				{{ replace (readFile $fname) $path $fill | safeHTML }}
             </span>
                 Services
             </h2>
@@ -53,20 +53,20 @@
 
             <a href="./services" class="i-button">
             <span class="i-small-icon">
-            {{- $fname:=print "/static/icons/link-solid.svg" -}}
-            {{- $path:="<path" -}}
-            {{- $fill:="<path fill=\"white\"" -}}
-                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+				{{- $fname:=print "/static/icons/link-solid.svg" -}}
+				{{- $path:="<path" -}}
+				{{- $fill:="<path fill=\"white\"" -}}
+				{{ replace (readFile $fname) $path $fill | safeHTML }}
             </span>
                 Services</a>
         </div>
         <div class='right'>
             <h2>
              <span class="i-big-icon">
-            {{- $fname:=print "/static/icons/user.svg" -}}
-            {{- $path:="<path" -}}
-            {{- $fill:="<path fill=\"#D092FC\"" -}}
-                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+				{{- $fname:=print "/static/icons/user.svg" -}}
+				{{- $path:="<path" -}}
+				{{- $fill:="<path fill=\"#D092FC\"" -}}
+				{{ replace (readFile $fname) $path $fill | safeHTML }}
             </span>
                 Blog
             </h2>
@@ -75,17 +75,18 @@
             <ul class='i-blog'>
                 <!-- Ranges through content/posts/*.md -->
                 {{ range where .Paginator.Pages.ByDate.Reverse "Section" "posts" | first 8 }}
-                <li>{{.Date.Format "2006 Jan 02"}} - <a href="{{.RelPermalink}}">{{.Title}}</a></li>
+					<li>{{.Date.Format "2006 Jan 02"}} - <a
+							href="{{.RelPermalink}}">{{.Title}}</a></li>
                 {{ end }}
             </ul>
             <p class="i-blog"><a href="./posts">Read more...</a></p>
 
             <h2>
             <span class="i-big-icon">
-            {{- $fname:=print "/static/icons/address-card.svg" -}}
-            {{- $path:="<path" -}}
-            {{- $fill:="<path fill=\"#D092FC\"" -}}
-                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+				{{- $fname:=print "/static/icons/address-card.svg" -}}
+				{{- $path:="<path" -}}
+				{{- $fill:="<path fill=\"#D092FC\"" -}}
+				{{ replace (readFile $fname) $path $fill | safeHTML }}
             </span>
                 Contact
             </h2>
@@ -102,7 +103,7 @@
                         {{- $fname:=print "/static/icons/email.svg" -}}
                         {{- $path:="<path" -}}
                         {{- $fill:="<path fill=\"#ffffff\"" -}}
-                                          {{ replace (readFile $fname) $path $fill | safeHTML }}
+						{{ replace (readFile $fname) $path $fill | safeHTML }}
                     </span>
                 </a>
                 <a href="/keys/contact-gpg-key.txt" style="float: left">
@@ -110,17 +111,17 @@
                         {{- $fname:=print "/static/icons/key.svg" -}}
                         {{- $path:="<path" -}}
                         {{- $fill:="<path fill=\"#ffffff\"" -}}
-                                          {{ replace (readFile $fname) $path $fill | safeHTML }}
+                        {{ replace (readFile $fname) $path $fill | safeHTML }}
                     </span>
                 </a>
             </div>
 
             <h2>
             <span class="i-big-icon">
-            {{- $fname:=print "/static/icons/dollar.svg" -}}
-            {{- $path:="<path" -}}
-            {{- $fill:="<path fill=\"#D092FC\"" -}}
-                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+				{{- $fname:=print "/static/icons/dollar.svg" -}}
+				{{- $path:="<path" -}}
+				{{- $fill:="<path fill=\"#D092FC\"" -}}
+				{{ replace (readFile $fname) $path $fill | safeHTML }}
             </span>
                 Donate
             </h2>
@@ -129,10 +130,10 @@
             </p>
             <a href="./donate" class="i-button">
             <span class="i-small-icon" style='margin-right: 15px; top:-1px'>
-            {{- $fname:=print "/static/icons/monero.svg" -}}
-            {{- $path:="<path" -}}
-            {{- $fill:="<path fill=\"white\"" -}}
-                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+				{{- $fname:=print "/static/icons/monero.svg" -}}
+				{{- $path:="<path" -}}
+				{{- $fill:="<path fill=\"white\"" -}}
+				{{ replace (readFile $fname) $path $fill | safeHTML }}
             </span>
                 Donate!</a>
         </div>

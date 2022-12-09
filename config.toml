@@ -27,6 +27,8 @@ relativeURLs=true
 		name       = "SOURCE"
 		url        = "https://git.elpengu.com/stefan911/elpengu"
 
+[markup.goldmark.renderer]
+    unsafe = true
 
 [Permalinks]
     posts = "/posts/:filename/"
