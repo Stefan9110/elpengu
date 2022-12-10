@@ -162,19 +162,20 @@ laptop with Linux. A post about Linux will come by soon.
 
 ##
 
+##
+
 ### Firefox
 
 [{{< image src="/images/firefox.webp" position="left" style="width: 20%; margin-right: 20px" >}}](https://www.mozilla.org/en-US/firefox/new/)
 
-[Firefox](https://www.mozilla.org/en-US/firefox/new/) is the go-to browser for
-better privacy, while keeping a good user experience. For the average user,
+[Firefox](https://www.mozilla.org/en-US/firefox/new/) is the only viable alternative to Chromium based browsers.
+Although it does not provide the best privacy outside the box, it being open source allowed a new family of
+privacy-friendly browsers to exist. For the average user,
 the experience is **exactly the same as Chrome**, without all the spyware and
 ads. It even allows you to import all of your bookmakers when installed. Note
 that for maximum privacy you need **to configure** Firefox.
 
-This is inconvenient, so people have created [some forks](https://librewolf.net/) in order to solve this problem.
-
-###    
+###      
 
 ### Element
 
@@ -188,7 +189,7 @@ with each other through multiple servers. With the power of decentralisation,
 your data is safe and, in case of a server being compromised, you can always
 switch to another.
 
-###    
+###      
 
 ### Signal
 
@@ -200,11 +201,9 @@ messenger apps. Messages are encrypted by default (verifiable through
 open-source). If you are not willing to set up a Matrix account, you should use
 Signal instead of WhatsApp.
 
-###    
+##
 
-###    
-
-###    
+##
 
 # Not convinced yet?
 
