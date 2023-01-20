@@ -101,8 +101,8 @@ found [here](https://spyware.neocities.org/guides/firefox.html).
 If you are not willing to configure Firefox, you should look into its forks that provide better privacy defaults.
 
 <span class="i-blog">
-<a style='margin-right: 10px' href="">[Download]</a>
-<a href="">[Website]</a>
+<a style='margin-right: 10px' href="https://www.mozilla.org/en-US/firefox/new/">[Download]</a>
+<a href="https://www.mozilla.org/">[Website]</a>
 </span>
 </details>
 
@@ -124,8 +124,8 @@ Librewolf phones home at startup, although it can be disabled from
 middle ground for privacy and convenience. Definitely use over vanilla Firefox.
 
 <span class="i-blog">
-<a style='margin-right: 10px' href="">[Download]</a>
-<a href="">[Website]</a>
+<a style='margin-right: 10px' href="https://librewolf.net/installation/">[Download]</a>
+<a href="https://librewolf.net/">[Website]</a>
 </span>
 </details>
 
@@ -138,11 +138,23 @@ middle ground for privacy and convenience. Definitely use over vanilla Firefox.
 </summary>
 <hr>
 
-**TODO**: add details here
+**TOR Browser** is a fork of Firefox built to be used on the onion network. Depending on your threat model, you might
+need to use the onion router to access certain websites. Tor is the recommended browser for doing so in order to blend
+in with other tor users.
+
+TOR Browser **does NOT have** the best privacy settings outside the box. Javascript is enabled by default, and you
+**absolutely don't want to use that** on onion websites. You also don't want to use DuckDuckGo, the default search
+engine. Not only it does not index onion sites, but it is also not good for your privacy. Use a privacy respecting
+search engine instead (see below).
+
+To disable JS, go into settings and select the **Safest** option from Privacy & Security.
+
+Note that TOR might be blocked on your network / in your country. In that case, you need to use a **TOR bridge** to
+connect to the onion network.
 
 <span class="i-blog">
-<a style='margin-right: 10px' href="">[Download]</a>
-<a href="">[Website]</a>
+<a style='margin-right: 10px' href="https://www.torproject.org/download/">[Download]</a>
+<a href="https://www.torproject.org/">[Website]</a>
 </span>
 </details>
 
@@ -163,9 +175,11 @@ It is a good option if you need to browse the internet safely and don't care
 about some sites that require javascript not working. If your thread model is
 high enough you shouldn't use websites that require javascript anyway.
 
+IceCat can be used to connect to the onion network, however that is not recommended due to your unique fingerprint
+related to using another browser than **TOR**.
+
 <span class="i-blog">
-<a style='margin-right: 10px' href="">[Download]</a>
-<a href="">[Website]</a>
+<a href="https://www.gnu.org/software/gnuzilla/">[Website & Download]</a>
 </span>
 </details>
 
@@ -186,9 +200,13 @@ however it is known for adding spyware features in the past, such as
 Should only be used if Chromium engine is required and Ungoogled Chromium cannot be
 compiled in a reasonable amount of time, or the binary cannot be installed, for some reason.
 
+Brave can be used to connect to the onion network, however that is not recommended due to your unique fingerprint
+related to using another browser than **TOR**. Moreover, its suspicious privacy features make it a bad tool to browse
+onion websites.
+
 <span class="i-blog">
-<a style='margin-right: 10px' href="">[Download]</a>
-<a href="">[Website]</a>
+<a style='margin-right: 10px' href="https://brave.com/download/">[Download]</a>
+<a href="https://brave.com/">[Website]</a>
 </span>
 </details>
 
@@ -212,7 +230,7 @@ installing extensions being a tedious task. However, if you need a chromium
 based browser, it is the best solution out there.
 
 <span class="i-blog">
-<a style='margin-right: 10px' href="https://github.com/ungoogled-software/ungoogled-chromium">[Download & Website]</a>
+<a href="https://github.com/ungoogled-software/ungoogled-chromium">[Download & Website]</a>
 </span>
 </details>
 
@@ -225,28 +243,116 @@ hand it over** to Google, Facebook or other companies. You should aim to
 replace **all of your services** from these companies with privacy-friendly
 alternatives.
 
-You can see the privacy-friendly services **hosted by ElPengu** [here](../../services).
+You can see the privacy-friendly services hosted by **ElPengu** [here](../../services).
 
 ## Search Engines
 
-### {{< image src="/logos/librex.png" position="relative" style="height: 2.15rem; width: 2.15rem; margin-right: 15px" >}} [LibreX](https://github.com/hnhx/librex/)
+[//]: # (LibreX)
+<details class="post-box">
+<summary class="post-box-title">
+<img class='box-logo' src="/logos/librex.png">
+<h2 style="font-size: 32px">LibreX</h2>
+<p class="box-privacy">{{< text-icon privacy "#55FF55" >}} Privacy Level: <b><span style="color: #55FF55">Very High</span></b></p>
+</summary>
+<hr>
 
-{{< image src="/images/librex-interface.webp" position="center" style="width: 75%" >}}
-
-{{< text-icon privacy "#55FF55" >}} Privacy level: **{{< color "Very high" "#55FF55" >}}**
+{{< image src="/images/librex-interface.webp" position="center" style="width: 100%; border:1px solid #4e4e57;" >}}
 
 **LibreX** is a meta search engine that pulls Google results. It uses **no
 javascript**, therefore your search queries can't be tracked.
 
-Other useful features are torrent search and onion link search.
+LibreX is written in php, therefore it is lightweight and can be easily hosted by anyone.
 
-### {{< image src="/logos/searx.png" position="relative" style="height: 2.15rem; width: 2.15rem; margin-right: 15px" >}} [SearXNG](https://github.com/searxng/searxng)
+Useful features LibreX includes:
 
-{{< image src="/images/searxng-interface.webp" position="center" style="width: 75%" >}}
+* Torrent search
+* Onion links indexes
+* Custom searches such as crypto converting
+* **Configurable** privacy-friendly instance URL replacer
 
-{{< text-icon privacy "#00FF11" >}} Privacy level: **{{< color "High" "#00FF11" >}}**
+<span class="i-blog">
+<a style='margin-right: 10px' href="https://librex.beparanoid.de">[Recommended Instance]</a>
+<a style='margin-right: 10px' href="https://github.com/hnhx/librex#instances">[Instance List]</a>
+<a style='margin-right: 10px' href="https://github.com/hnhx/librex">[Source]</a>
+</span>
+</details>
+
+[//]: # (SearXNG)
+<details class="post-box">
+<summary class="post-box-title">
+<img class='box-logo' src="/logos/searx.png">
+<h2 style="font-size: 32px">SearXNG</h2>
+<p class="box-privacy">{{< text-icon privacy "#00FF11" >}} Privacy Level: <b><span style="color: #00FF11">High</span></b></p>
+</summary>
+<hr>
+
+{{< image src="/images/searxng-interface.webp" position="center" style="width: 100%; border:1px solid #4e4e57;" >}}
 
 **SearXNG** is a fork of SearX, a meta search engine that pulls results from
 **a lot** of search engines, including Google, DuckDuckGo, StartPage. It
 requires javascript for proper use, which can be maliciously modified by the
-host, but has the advantage of being customizable.
+host, but has the advantage of being **very** customizable.
+
+Features:
+
+* Torrent search
+* Vim keys
+* Tracker URL remover
+* Special queries
+
+<span class="i-blog">
+<a style='margin-right: 10px' href="https://searx.elpengu.com">[Recommended Instance]</a>
+<a style='margin-right: 10px' href="https://searx.space/">[Instance List]</a>
+<a style='margin-right: 10px' href="https://github.com/searxng/searxng">[Source]</a>
+</span>
+</details>
+
+[//]: # (Whoogle)
+<details class="post-box">
+<summary class="post-box-title">
+<img class='box-logo' src="/logos/whoogle.webp">
+<h2 style="font-size: 32px">Whoogle</h2>
+<p class="box-privacy">{{< text-icon privacy "#00FF11" >}} Privacy Level: <b><span style="color: #00FF11">High</span></b></p>
+</summary>
+<hr>
+
+{{< image src="/images/whoogle-interface.webp" position="center" style="width: 100%; border:1px solid #4e4e57;" >}}
+
+**Whoogle** is a customizable search engine pulling results from Google. It doesn't require javascript and is
+lightweight on the system. It is written in python, therefore it can be slow at times depending on server load. Can be
+easily deployed locally.
+
+Features:
+* Tracker URL remover
+* Randomly generated user agent
+* Proxy support
+
+<span class="i-blog">
+<a style='margin-right: 10px' href="https://search.albony.xyz">[Recommended Instance]</a>
+<a style='margin-right: 10px' href="https://github.com/benbusby/whoogle-search#public-instances">[Instance List]</a>
+<a style='margin-right: 10px' href="https://github.com/benbusby/whoogle-search">[Source]</a>
+</span>
+</details>
+
+## YouTube alternatives
+[//]: # (Invidious)
+<details class="post-box">
+<summary class="post-box-title">
+<img class='box-logo' src="/logos/invidious.png">
+<h2 style="font-size: 32px">Invidious</h2>
+<p class="box-privacy">{{< text-icon privacy "#55FF55" >}} Privacy Level: <b><span style="color: #55FF55">Very High</span></b></p>
+</summary>
+<hr>
+
+{{< image src="/images/whoogle-interface.webp" position="center" style="width: 100%; border:1px solid #4e4e57;" >}}
+
+Descr
+
+<span class="i-blog">
+<a style='margin-right: 10px' href="https://search.albony.xyz">[Recommended Instance]</a>
+<a style='margin-right: 10px' href="https://github.com/benbusby/whoogle-search#public-instances">[Instance List]</a>
+<a style='margin-right: 10px' href="https://github.com/benbusby/whoogle-search">[Source]</a>
+</span>
+</details>
+
+

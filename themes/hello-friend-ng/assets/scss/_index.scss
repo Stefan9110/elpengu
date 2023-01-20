@@ -9,6 +9,35 @@
   border-radius: 5px;
 }
 
+.warning {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  background-color:  #d3a117;
+  border-radius: 15px;
+  padding: 10px 0px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.warning span{
+  float:left;
+  width: 8%;
+  max-width: 40px;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+.warning p {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  max-width: 85%;
+  overflow-wrap: break-word;
+}
+
 .main-container b {
   color: white;
 }
@@ -173,5 +202,17 @@
     margin-left: 20px;
     margin-right: 20px;
     display: inline-block;
+  }
+
+  .warning {
+    padding: 10px 15px;
+    width: 90%;
+  }
+
+  .warning span {
+    width: 40%;
+  }
+  .warning p {
+    width: 75%;
   }
 }

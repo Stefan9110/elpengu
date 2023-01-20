@@ -1,4 +1,15 @@
 {{ define "main" }}
+<div class="warning">
+    <span>
+        {{- $fname:=print "/static/icons/warn.svg" -}}
+        {{- $path:="<path" -}}
+        {{- $fill:="<path fill=\"white\"" -}}
+        {{ replace (readFile $fname) $path $fill | safeHTML }}
+    </span>
+    <p>Due to high disk usage, email is currently disabled. 
+        You can still contact me via Matrix or through my temporary email address 
+    <b>elpengu@danwin1210.de</b></p>
+</div>
 <div class='main-container'>
     <div class='title'>
         <h1>elpengu's home</h1>
@@ -143,17 +154,17 @@
             <img style="display: inline-block;" src="webring/elpengu.webp"
                  alt="elpengu">
         </a>
-        <a href="https://beparanoid.de">
-            <img style="display: inline-block;" src="webring/paranoid.gif"
-                 alt="BeParanoid">
+        <a href="https://denshi.org">
+            <img style="display: inline-block;" src="webring/denshi.png"
+                 alt="DenshiSite">
+        </a>
+        <a href="https://femboy.hu">
+            <img style="display: inline-block;" src="webring/femboy.png"
+                 alt="femboy.hu">
         </a>
         <a href="https://chaox.ro">
             <img style="display: inline-block;" src="webring/chaox.png"
                  alt="Chaox">
-        </a>
-        <a href="https://denshi.org">
-            <img style="display: inline-block;" src="webring/denshi.png"
-                 alt="DenshiSite">
         </a>
     </div>
 </div>
