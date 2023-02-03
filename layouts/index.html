@@ -1,19 +1,8 @@
 {{ define "main" }}
-<div class="warning">
-    <span>
-        {{- $fname:=print "/static/icons/warn.svg" -}}
-        {{- $path:="<path" -}}
-        {{- $fill:="<path fill=\"white\"" -}}
-        {{ replace (readFile $fname) $path $fill | safeHTML }}
-    </span>
-    <p>Due to high disk usage, email is currently disabled. 
-        You can still contact me via Matrix or through my temporary email address 
-    <b>elpengu@danwin1210.de</b></p>
-</div>
 <div class='main-container'>
     <div class='title'>
         <h1>elpengu's home</h1>
-        <hr style="margin-top: 10px;"/>
+        <hr style="margin-top: 10px;" />
     </div>
     <div class="i-main">
         <div class='left'>
@@ -30,9 +19,9 @@
                     <b>Matrix</b>,
                     <b>IRC</b>, <b>Fediverse</b> etc.
                 </li>
-				<li>Decentralisation. Having all your eggs in the same basket has never been a worse idea than today.
+                <li>Decentralisation. Having all your eggs in the same basket has never been a worse idea than today.
                 </li>
-				<li>Minimalism and the UNIX philosophy: all programs should do one thing, do it well and in a simple
+                <li>Minimalism and the UNIX philosophy: all programs should do one thing, do it well and in a simple
                     manner.
                 </li>
                 <li>Abstinence from consumerism. The web is a powerful tool, but at the same time a weapon for
@@ -41,130 +30,112 @@
                 </li>
             </ul>
             <a href="./about" class="i-button">
-            <span class="i-small-icon">
-				{{- $fname:=print "/static/icons/link-solid.svg" -}}
-	            {{- $path:="<path" -}}
-				{{- $fill:="<path fill=\"white\"" -}}
-				{{ replace (readFile $fname) $path $fill | safeHTML }}
-            </span>
-                About me</a>
+                <span class="i-small-icon">
+                    {{- $fname:=print "/static/icons/link-solid.svg" -}}
+                    {{- $path:="<path" -}} {{- $fill:="<path fill=\" white\"" -}} {{ replace (readFile $fname) $path
+                        $fill | safeHTML }} </span>
+                        About me</a>
 
             <h2>
-            <span class="i-big-icon">
-				{{- $fname:=print "/static/icons/server.svg" -}}
-				{{- $path:="<path" -}}
-				{{- $fill:="<path fill=\"#D092FC\"" -}}
-				{{ replace (readFile $fname) $path $fill | safeHTML }}
-            </span>
-                Services
+                <span class="i-big-icon">
+                    {{- $fname:=print "/static/icons/server.svg" -}}
+                    {{- $path:="<path" -}} {{- $fill:="<path fill=\" #D092FC\"" -}} {{ replace (readFile $fname) $path
+                        $fill | safeHTML }} </span>
+                        Services
             </h2>
             <p>I host multiple <b>open-source & privacy-friendly</b> services, providing an alternative to popular
                 websites.
                 Everything is <b>free as in freedom</b> (no ads, no tracking). Take a look at them below!</p>
 
             <a href="./services" class="i-button">
-            <span class="i-small-icon">
-				{{- $fname:=print "/static/icons/link-solid.svg" -}}
-				{{- $path:="<path" -}}
-				{{- $fill:="<path fill=\"white\"" -}}
-				{{ replace (readFile $fname) $path $fill | safeHTML }}
-            </span>
-                Services</a>
+                <span class="i-small-icon">
+                    {{- $fname:=print "/static/icons/link-solid.svg" -}}
+                    {{- $path:="<path" -}} {{- $fill:="<path fill=\" white\"" -}} {{ replace (readFile $fname) $path
+                        $fill | safeHTML }} </span>
+                        Services</a>
         </div>
         <div class='right'>
             <h2>
-             <span class="i-big-icon">
-				{{- $fname:=print "/static/icons/book.svg" -}}
-				{{- $path:="<path" -}}
-				{{- $fill:="<path fill=\"#D092FC\"" -}}
-				{{ replace (readFile $fname) $path $fill | safeHTML }}
-            </span>
-                Articles
+                <span class="i-big-icon">
+                    {{- $fname:=print "/static/icons/book.svg" -}}
+                    {{- $path:="<path" -}} {{- $fill:="<path fill=\" #D092FC\"" -}} {{ replace (readFile $fname) $path
+                        $fill | safeHTML }} </span>
+                        Articles
             </h2>
-            <p>I sometimes post about technology and its implications in real life, philosophy and other topics of interest. Here are some of my articles:</p>
+            <p>I sometimes post about technology and its implications in real life, philosophy and other topics of
+                interest. Here are some of my articles:</p>
             <ul class='i-blog'>
                 <!-- Ranges through content/posts/*.md -->
                 {{ range where .Paginator.Pages.ByDate.Reverse "Section" "posts" | first 8 }}
-					<li>{{.Date.Format "2006 Jan 02"}} - <a
-							href="{{.RelPermalink}}">{{.Title}}</a></li>
+                <li>{{.Date.Format "2006 Jan 02"}} - <a href="{{.RelPermalink}}">{{.Title}}</a></li>
                 {{ end }}
             </ul>
             <p class="i-blog"><a href="./posts">Read more...</a></p>
 
             <h2>
-            <span class="i-big-icon">
-				{{- $fname:=print "/static/icons/address-card.svg" -}}
-				{{- $path:="<path" -}}
-				{{- $fill:="<path fill=\"#D092FC\"" -}}
-				{{ replace (readFile $fname) $path $fill | safeHTML }}
-            </span>
-                Contact
+                <span class="i-big-icon">
+                    {{- $fname:=print "/static/icons/address-card.svg" -}}
+                    {{- $path:="<path" -}} {{- $fill:="<path fill=\" #D092FC\"" -}} {{ replace (readFile $fname) $path
+                        $fill | safeHTML }} </span>
+                        Contact
             </h2>
-            <p class="i-blog">You can contact me via <b>Email</b> or <b>Matrix</b>. No, I don't use Discord and I don't have a Discord
-                server, but you could join my <a href="https://matrix.to/#/#chat:matrix.elpengu.com">Matrix room</a>.</p>
+            <p class="i-blog">You can contact me via <b>Email</b> or <b>Matrix</b>. No, I don't use Discord and I don't
+                have a Discord
+                server, but you could join my <a href="https://matrix.to/#/#chat:matrix.elpengu.com">Matrix room</a>.
+            </p>
 
 
             <div style='display: inline-block; width: 100%'>
                 <a href="https://matrix.to/#/@stefan911:matrix.elpengu.com" rel="noopener" target="_blank"
-                   style="float: left; margin-right: 30px"><img src="/logos/matrix-logo-white.svg"
-                                                                alt="Matrix" style='max-width: 80px'></a>
-                <a href="mailto:contact@elpengu.com" style="float: left">
+                    style="float: left; margin-right: 30px"><img src="/logos/matrix-logo-white.svg" alt="Matrix"
+                        style='max-width: 80px'></a>
+                <a href="mailto:elpengu@danwin1210.de" style="float: left">
                     <span class="i-big-icon" style="margin-right: 30px">
                         {{- $fname:=print "/static/icons/email.svg" -}}
-                        {{- $path:="<path" -}}
-                        {{- $fill:="<path fill=\"#ffffff\"" -}}
-						{{ replace (readFile $fname) $path $fill | safeHTML }}
-                    </span>
+                        {{- $path:="<path" -}} {{- $fill:="<path fill=\" #ffffff\"" -}} {{ replace (readFile $fname)
+                            $path $fill | safeHTML }} </span>
                 </a>
-                <a href="/keys/contact-gpg-key.txt" style="float: left">
+                {{/*  <a href="/keys/contact-gpg-key.txt" style="float: left">
                     <span class="i-big-icon">
                         {{- $fname:=print "/static/icons/key.svg" -}}
-                        {{- $path:="<path" -}}
-                        {{- $fill:="<path fill=\"#ffffff\"" -}}
-                        {{ replace (readFile $fname) $path $fill | safeHTML }}
-                    </span>
-                </a>
+                        {{- $path:="<path" -}} {{- $fill:="<path fill=\" #ffffff\"" -}} {{ replace (readFile $fname)
+                            $path $fill | safeHTML }} </span>
+                </a>  */}}
             </div>
 
             <h2>
-            <span class="i-big-icon">
-				{{- $fname:=print "/static/icons/dollar.svg" -}}
-				{{- $path:="<path" -}}
-				{{- $fill:="<path fill=\"#D092FC\"" -}}
-				{{ replace (readFile $fname) $path $fill | safeHTML }}
-            </span>
-                Donate
+                <span class="i-big-icon">
+                    {{- $fname:=print "/static/icons/dollar.svg" -}}
+                    {{- $path:="<path" -}} {{- $fill:="<path fill=\" #D092FC\"" -}} {{ replace (readFile $fname) $path
+                        $fill | safeHTML }} </span>
+                        Donate
             </h2>
-            <p>If you think this website helped you in any way, please consider donating. All donations go towards improving
-                services and paying for hosting. Donators also gain access to <b>private instances</b> hosted on this site.
+            <p>If you think this website helped you in any way, please consider donating. All donations go towards
+                improving
+                services and paying for hosting. Donators also gain access to <b>private instances</b> hosted on this
+                site.
             </p>
             <a href="./donate" class="i-button">
-            <span class="i-small-icon" style='margin-right: 15px; top:-1px'>
-				{{- $fname:=print "/static/icons/monero.svg" -}}
-				{{- $path:="<path" -}}
-				{{- $fill:="<path fill=\"white\"" -}}
-				{{ replace (readFile $fname) $path $fill | safeHTML }}
-            </span>
-                Donate!</a>
+                <span class="i-small-icon" style='margin-right: 15px; top:-1px'>
+                    {{- $fname:=print "/static/icons/monero.svg" -}}
+                    {{- $path:="<path" -}} {{- $fill:="<path fill=\" white\"" -}} {{ replace (readFile $fname) $path
+                        $fill | safeHTML }} </span>
+                        Donate!</a>
         </div>
     </div>
     <div class='end-ring'>
-        <hr style="margin-top: 10px;"/>
+        <hr style="margin-top: 10px;" />
         <a href="https://elpengu.com">
-            <img style="display: inline-block;" src="webring/elpengu.webp"
-                 alt="elpengu">
+            <img style="display: inline-block;" src="webring/elpengu.webp" alt="elpengu">
         </a>
         <a href="https://denshi.org">
-            <img style="display: inline-block;" src="webring/denshi.png"
-                 alt="DenshiSite">
+            <img style="display: inline-block;" src="webring/denshi.png" alt="DenshiSite">
         </a>
         <a href="https://femboy.hu">
-            <img style="display: inline-block;" src="webring/femboy.png"
-                 alt="femboy.hu">
+            <img style="display: inline-block;" src="webring/femboy.png" alt="femboy.hu">
         </a>
         <a href="https://chaox.ro">
-            <img style="display: inline-block;" src="webring/chaox.png"
-                 alt="Chaox">
+            <img style="display: inline-block;" src="webring/chaox.png" alt="Chaox">
         </a>
     </div>
 </div>
